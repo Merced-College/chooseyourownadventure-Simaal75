@@ -1,4 +1,3 @@
-// LinkedList.cpp
 #include "LinkedList.h"
 
 Node::Node(Room room) : room(room), next(nullptr) {}
@@ -7,6 +6,7 @@ LinkedList::LinkedList() : head(nullptr) {}
 
 void LinkedList::addRoom(const Room& room) {
     auto newNode = make_shared<Node>(room);
+
     if (!head) {
         head = newNode;
     } else {
